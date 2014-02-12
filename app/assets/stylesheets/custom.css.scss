@@ -72,3 +72,17 @@ footer {
   margin-top: 45px;
   @include box_sizing;
 }
+
+.post {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.options {
+  float: right;
+  list-style-type: none;
+  li {
+    display: inline;
+  }
+}

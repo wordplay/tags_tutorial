@@ -1,0 +1,15 @@
+<h1>Listing posts</h1>
+<% @posts.each do |post| %>
+  <div class="row">
+    <div class="span12">
+      <div class="post">
+        <ul class="options">
+          <li><%= link_to 'Edit', edit_post_path(post) %></li>
+          <li><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+        </ul>
+        <h3><%= link_to post.title, post %></h3>
+        <p><%= post.body %></p>
+      </div>
+    </div>
+  </div>
+<% end %>
